@@ -29,19 +29,20 @@ namespace Zip
         // Clase donde tienen que implementar los métodos
         class _Zip : IEnumerator<T>
         {
-            //bool first;
+            // Recomendación: bool first;
             IEnumerator<T> Enum1;
             IEnumerator<T> Enum2;
             public _Zip(IEnumerator<T> enum1, IEnumerator<T> enum2)
             {
                 Enum1 = enum1;
                 Enum2 = enum2;
-                //first = true;
+                // Recomendación: first = true;
             }
 
             public bool MoveNext()
             {
-                return true;
+                // Borra la linea debajo y escribe tu código
+                throw new NotImplementedException();
             }
 
             object IEnumerator.Current
@@ -56,7 +57,8 @@ namespace Zip
             {
                 get
                 {
-                   
+                    // Borra la linea debajo y escribe tu código
+                    throw new NotImplementedException();
                 }
             }
 
